@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: rgba(107, 116, 122, 0.192);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(135, 134, 148);
+}
+
+/**** FONTS ****/
+
+@font-face {
+    font-family: Circular-Black;
+    src: url("/assets/fonts/circular/CircularStd-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Circular-Bold;
+    src: url("/assets/fonts/circular/CircularStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("/assets/fonts/circular/CircularStd-Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Circular-Light;
+    src: url("/assets/fonts/circular/CircularStd-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Circular-Medium;
+    src: url("/assets/fonts/circular/CircularStd-Medium.otf") format("opentype");
+}
+
+body {
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #000;
+    background-image: url("/assets/img/bg10.svg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.main {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    user-select: none;
+}
+
+/**** NAVBAR ****/
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding-top: 7px !important;
+    padding: 0 20px;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#brand a {
+    font-family: "Inter";
+    letter-spacing: -2px;
+    color: #fff;
+    line-height: 80px;
+    margin-left: 20px;
+    font-size: 30px;
+    background: #ffffff;
+    background: -webkit-linear-gradient(to right, #ffffff, #b3b5ff);
+    background: linear-gradient(to right, #ffffff, #b3b5ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    color: white;
+    font-family: "Inter";
+}
+
+ul li {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+ul a:hover {
+    color: rgb(230, 230, 230);
+    transition: 0.3s;
+}
+
+#buy {
+    border-radius: 5px;
+    padding: 9px 10px;
+    background-color: #81e6d9;
+}
+
+#buy a {
+    color: #000;
+    font-family: "Inter";
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    margin-right: 13px;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    z-index: 999;
+    display: none;
+    position: absolute;
+    top: 70px;
+    padding-top: 20px;
+    left: 0;
+    width: 97%;
+    height: 25vh;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    margin-left: 7px;
+    color: black;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+    color: black;
+}
+
+/**** HERO ****/
+
+.hero {
+    width: 100%;
+    margin-top: -8%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 7rem;
+    line-height: 115px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: -7px;
+}
+
+#flexible {
+    background: #f9ebfa;
+    background: -webkit-linear-gradient(to right, #f9ebfa, #c844f8);
+    background: linear-gradient(to right, #f9ebfa, #c844f8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#powerful {
+    background: #f5e0e0;
+    background: -webkit-linear-gradient(to right, #f5e0e0, #ffa8ba);
+    background: linear-gradient(to right, #f5e0e0, #ffa8ba);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#fast {
+    background: #c6e7fb;
+    background: -webkit-linear-gradient(to right, #c6e7fb, #5e5cf0);
+    background: linear-gradient(to right, #c6e7fb, #5e5cf0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-text p {
+    color: rgb(166, 166, 166);
+    font-family: "Inter";
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+}
+
+.hero-text {
+    z-index: 100;
+}
+
+#know {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px !important;
+    margin: auto;
+    width: 100px;
+    border-radius: 5px;
+    padding: 9px 10px;
+    background-color: #81e6d9;
+}
+
+#know a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Inter";
+}
+
+/**** HERO IMAGE ****/
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80vh;
+}
+
+.laptop {
+    user-select: none;
+    position: absolute;
+    width: 70%;
+    height: auto;
+    margin-top: 200px;
+}
+
+/**** ABOUT ****/
+
+.about {
+    padding-top: 80px;
+    margin-bottom: 150px;
+}
+
+.about-content {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 5rem;
+    line-height: 115px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: -4px;
+    background: #ffffff;
+    background: -webkit-linear-gradient(to right, #ffffff, #fff5f5);
+    background: linear-gradient(to right, #ffffff, #bbbbbb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.about-content p {
+    color: rgb(166, 166, 166);
+    font-family: "Inter";
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+/**** ABOUT GRID ****/
+
+.row {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    float: left;
+    margin-bottom: 36px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px;
+    border: 1px solid rgba(148, 148, 148, 0.24);
+    padding: 20px;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container h2 {
+    font-family: 'Inter', sans-serif;
+    color: rgb(191, 191, 191);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/**** FOOTER ****/
+
+footer {
+    font-family: "Inter";
+    color: rgb(166, 166, 166);
+    font-size: 1rem;
+    padding: 20px;
+}
+
+/**** INFO GRID ****/
+
+.item-row {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.container-info {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 490px;
+}
+
+.container-info img {
+    overflow-x: hidden;
+    height: 140vh;
+    margin-left: 170px;
+    margin-top: -190px;
+}
+
+.container-main {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 490px;
+    margin-top: 40px;
+}
+
+.container-main h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    letter-spacing: -2px;
+    color: #ffffff;
+
+}
+
+.container-main p {
+    color: rgb(166, 166, 166);
+    font-family: "Inter";
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 80%;
+    margin-left: 20%;
+    margin-bottom: 40px;
+}
+
+/**** CHIP ****/
+
+.chip {
+    /* background: linear-gradient(to right, #141414, #3b3b3b); */
+    border: 1px solid rgb(35, 35, 35);
+    color: #e7e7e7;
+    width: 60%;
+    margin: auto;
+    border-radius: 11px;
+    padding: 75px;
+    margin-bottom: 150px;
+    margin-top: -100px;
+    box-shadow: rgba(10, 1, 54, 0.189) 0px 30px 90px;
+}
+
+.chip-content h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    letter-spacing: -2px;
+    color: #ffffff;
+}
+
+.chip-content p {
+    text-align: justify;
+    color: rgb(166, 166, 166);
+    font-family: "Inter";
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/**** RESPONSIVE CODE ****/
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    .hero-text {
+        margin-top: -200px;
+    }
+
+    .hero-text h1 {
+        font-size: 6.7rem;
+    }
+
+    .hero-image {
+        margin-bottom: 20vh;
+    }
+
+    .laptop {
+        width: 100%;
+        height: 60vh;
+        margin-top: -50px;
+    }
+
+    .about-content h1 {
+        font-size: 4.5rem;
+        line-height: 85px;
+    }
+
+    .about-content p {
+        width: 80%;
+    }
+
+    .container-main {
+        margin-left: -55px;
+        margin-top: -50px;
+    }
+
+    .container-main h1 {
+        margin-bottom: 10px;
+    }
+
+    .container-main p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .container-info img {
+        display: none;
+    }
+
+    .chip {
+        margin-top: -400px;
+    }
+
+    .chip-content h1 {
+        font-size: 2.51rem;
+    }
+
+    .chip p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-main {
+        float: left;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+    }
+
+    .container-info {
+        float: right;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+    }
+}
