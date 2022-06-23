@@ -332,7 +332,7 @@ ul a:hover {
 
 .popup-text {
     font-family: "Inter";
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     font-size: 1.5rem;
     visibility: hidden;
     width: 160px;

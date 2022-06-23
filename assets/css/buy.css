@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: rgba(107, 116, 122, 0.192);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(135, 134, 148);
+}
+
+body {
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #000;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1010%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(0%2c 0%2c 0%2c 1)'%3e%3c/rect%3e%3cpath d='M270 54C134.48 55.3 82.26 211.84 0 195.39C-52.74 184.84 -56.68 41.02 0 0C78.32 -56.68 135 0 270 0C405 0 405 0 540 0C675 0 675 0 810 0C945 0 945 0 1080 0C1215 0 1215 0 1350 0C1485 0 1485 0 1620 0C1685.77 0 1704.16 -35.1 1751.54 0C1839.16 64.9 1800.32 189.84 1890 200C2004.55 212.98 2081.51 25.94 2160 46.29C2216.51 60.94 2160 158.14 2160 270C2160 405 2160 405 2160 540C2160 675 2160 675 2160 810C2160 945 2227.5 1012.5 2160 1080C2092.5 1147.5 2025 1080 1890 1080C1755 1080 1755 1080 1620 1080C1485 1080 1485 1080 1350 1080C1215 1080 1215 1080 1080 1080C945 1080 945 1080 810 1080C675 1080 675 1080 540 1080C405 1080 405 1080 270 1080C135 1080 67.5 1147.5 0 1080C-67.5 1012.5 0 945 0 810C0 675 0 675 0 540C0 506.25 -25.31 489.38 0 472.5C109.69 399.38 131.37 372.81 270 360C401.37 347.86 439.79 451.19 540 422.61C597.58 406.19 585.58 343.69 585.58 270C585.58 227.5 576.77 215.39 540 190.23C418.98 107.39 404.48 52.72 270 54' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1080 195.82C1041.87 195.82 1004.16 232.48 1004.16 270C1004.16 308.37 1041.86 347.59 1080 347.59C1118.57 347.59 1157.59 308.36 1157.59 270C1157.59 232.47 1118.58 195.82 1080 195.82' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1890 388.13C1868.25 388.13 1852.62 469.65 1852.62 540C1852.62 562.94 1870.03 574.71 1890 574.71C1914.03 574.71 1940.63 565.86 1940.63 540C1940.63 472.57 1912.26 388.13 1890 388.13' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M155.77 0C155.77 29.2 49.78 106.58 0 106.58C-28.11 106.58 -31.64 21.65 0 0C46.24 -31.64 155.77 -24.09 155.77 0' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M540 36.82C509.42 36.82 482.14 9.99 482.14 0C482.14 -8.42 511.07 0 540 0C585 0 630 -8.85 630 0C630 9.56 583.35 36.82 540 36.82' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M673.25 270C719.34 157.38 737.04 163.09 810 63.53C835.98 28.09 831.06 9.43 871.13 0C966.06 -22.34 975.57 0 1080 0C1215 0 1215 0 1350 0C1464.23 0 1537.95 -61.31 1578.46 0C1627.15 73.69 1514.55 145.87 1528.39 270C1535.32 332.17 1576.54 319.36 1620 372.6C1686.73 454.36 1678.18 461.95 1748.77 540C1813.18 611.22 1814.55 671.14 1890 671.14C1980.79 671.14 2059.94 629.71 2081.25 540C2107.58 429.14 1962.85 383.23 1985.29 270C2002.22 184.58 2105.02 142.71 2160 142.71C2192.38 142.71 2160 206.36 2160 270C2160 405 2160 405 2160 540C2160 675 2160 675 2160 810C2160 945 2160 945 2160 1080C2160 1080 2160 1080 2160 1080C2025 1080 2025 1080 1890 1080C1755 1080 1755 1080 1620 1080C1612.89 1080 1609.73 1085.75 1605.79 1080C1517.23 950.75 1528.38 938.49 1435 810C1400.49 762.51 1396.79 728.04 1350 728.04C1288.72 728.04 1259.28 748.52 1218.86 810C1143.57 924.5 1179.8 960.94 1118.57 1080C1110.37 1095.94 1099.28 1080 1080 1080C945 1080 945 1080 810 1080C703.31 1080 657.85 1136.86 596.61 1080C522.85 1011.51 574.56 829.29 540 829.29C504.47 829.29 535.59 1006.5 456.43 1080C400.59 1131.85 363.22 1080 270 1080C135 1080 81.23 1133.77 0 1080C-53.77 1044.41 -29.42 977.27 0 901.27C22.84 842.27 62.85 864.69 104.52 810C197.85 687.51 169.92 550.8 270 546.92C387.66 542.36 439.86 795.14 540 793.13C612.36 791.68 582.44 667.83 615 540C649.07 406.26 621.84 395.61 673.25 270' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1080 121.65C1003.73 121.65 928.31 194.97 928.31 270C928.31 346.73 1003.72 425.17 1080 425.17C1157.15 425.17 1235.17 346.71 1235.17 270C1235.17 194.95 1157.16 121.65 1080 121.65' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M810 707.14C685.83 707.14 550.8 761.67 550.8 810C550.8 857.48 684.68 898.77 810 898.77C891.42 898.77 964.29 856.93 964.29 810C964.29 761.11 892.57 707.14 810 707.14' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M25.96 0C25.96 4.86 8.3 17.76 0 17.76C-4.68 17.76 -5.27 3.61 0 0C7.71 -5.27 25.96 -4.02 25.96 0' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M760.91 270C769.56 227.48 786.65 195.88 810 195.88C832.43 195.88 824.41 238.1 852.47 270C959.41 391.54 965.57 502.76 1080 502.76C1195.72 502.76 1312.76 385.07 1312.76 270C1312.76 157.43 1201.54 151.88 1080 47.47C1044.4 16.88 998.49 12.73 998.49 0C998.49 -11 1039.24 0 1080 0C1215 0 1215 0 1350 0C1377.69 0 1400.46 -22.98 1405.38 0C1429.39 112.02 1358.63 153.56 1407.86 270C1465.94 407.36 1514.95 387.95 1620 507.6C1633.48 522.95 1630.22 525.84 1644.92 540C1765.22 655.83 1757.89 669.54 1890 767.57C1939.83 804.54 2008.8 770.29 2008.8 810C2008.8 874 1971.74 956.08 1890 975C1777.34 1001.08 1739.05 959.52 1620 900C1574.05 877.02 1596.52 849.56 1560 810C1461.52 703.31 1470.57 632.48 1350 607.5C1230.57 582.75 1214.36 712.4 1080 710.53C944.36 708.65 939.18 664.79 810 600C769.18 579.53 746.23 581.91 740 540C721.69 416.91 734.56 399.54 760.91 270' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M2117.65 270C2117.65 248.2 2146.67 239.14 2160 239.14C2167.85 239.14 2160 254.57 2160 270C2160 326.84 2170.24 383.68 2160 383.68C2149.07 383.68 2117.65 320.47 2117.65 270' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M213.39 810C250.23 772.29 236.04 720 270 720C311.77 720 360.75 752.52 364.86 810C373.61 932.52 339.13 956.4 295.71 1080C291.7 1091.4 282.86 1080 270 1080C135 1080 103.07 1111.93 0 1080C-31.93 1070.1 -24.32 1027.12 0 996.34C82.37 892.12 115.23 910.46 213.39 810' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M705.48 1080C705.48 1054.81 754.59 991.23 810 991.23C877.28 991.23 950.87 1055.96 950.87 1080C950.87 1100.34 880.43 1080 810 1080C757.74 1080 705.48 1099.2 705.48 1080' stroke='rgba(157%2c 157%2c 157%2c 0.1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1010'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.main {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    user-select: none;
+}
+
+/**** NAVBAR ****/
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding-top: 7px !important;
+    padding: 0 20px;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#brand a {
+    font-family: "Inter";
+    letter-spacing: -2px;
+    color: #fff;
+    line-height: 80px;
+    margin-left: 20px;
+    font-size: 30px;
+    background: #ffffff;
+    background: -webkit-linear-gradient(to right, #ffffff, #b3b5ff);
+    background: linear-gradient(to right, #ffffff, #b3b5ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    color: white;
+    font-family: "Inter";
+}
+
+ul li {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+ul a:hover {
+    color: rgb(230, 230, 230);
+    transition: 0.3s;
+}
+
+#buy {
+    border-radius: 5px;
+    padding: 9px 10px;
+    background-color: #81e6d9;
+}
+
+#buy a {
+    color: #000;
+    font-family: "Inter";
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    margin-right: 13px;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    z-index: 999;
+    display: none;
+    position: absolute;
+    top: 70px;
+    padding-top: 20px;
+    left: 0;
+    width: 97%;
+    height: 25vh;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    margin-left: 7px;
+    color: black;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+    color: black;
+}
+
+/**** HERO ****/
+
+.hero {
+    width: 100%;
+    margin-top: -8%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 5.5rem;
+    line-height: 115px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: -6px;
+    color: #fff;
+}
+
+.hero-text p {
+    color: rgb(166, 166, 166);
+    font-family: "Inter";
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+}
+
+.hero-text {
+    z-index: 100;
+}
+
+.form-input {
+    font-family: "Inter";
+    margin: auto;
+    padding: 40px !important;
+    width: 70%;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(16px);
+    background-color: rgba(50, 50, 50, 0.108);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+input {
+    font-family: "Inter";
+    font-size: 1.1rem;
+    padding: .7rem 1rem;
+    width: 55%;
+    border-radius: 7px;
+    outline: none;
+    border: .1rem solid #d1d1d1;
+}
+
+.subscribe-btn {
+    padding: .8rem 2rem;
+    border-radius: 7px;
+    background: #583286;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: "Inter";
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#know {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px !important;
+    margin: auto;
+    width: 100px;
+    border-radius: 5px;
+    padding: 9px 10px;
+    background-color: #81e6d9;
+}
+
+#know a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Inter";
+}
+
+
+/**** FEATURES ****/
+
+.features {
+    margin-bottom: 100px;
+}
+
+.about-content {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 9999;
+}
+
+.about-content h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: -4px;
+    color: #fff;
+}
+
+.about-content p {
+    color: rgb(152, 152, 152);
+    font-family: "Inter";
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.card {
+    margin: 10px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    border: 1px solid rgba(152, 152, 152, 0.178);
+    overflow: hidden;
+}
+
+.card-header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.card-body h2 {
+    color: #fff;
+}
+
+.card-body p {
+    font-family: "Inter";
+    color: rgb(152, 152, 152);
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/**** LIVE SPECS ****/
+
+.live-specs {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: -10%;
+}
+
+.live-specs>img {
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+}
+
+.live-specs .point {
+    cursor: pointer;
+    outline: 0;
+    z-index: 0;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    opacity: .8;
+    background: rgba(148, 148, 148, 0.85);
+    border: 5px solid #ffffff
+}
+
+.popup-text {
+    font-family: "Inter";
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -90px;
+}
+
+.popup-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.point .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/**** FOOTER ****/
+
+footer {
+    font-family: "Inter";
+    color: rgb(170, 169, 169);
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+/**** RESPONSIVE CODE ****/
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    .hero-text {
+        margin-top: -100px;
+    }
+
+    .hero-text h1 {
+        font-size: 5.4rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
