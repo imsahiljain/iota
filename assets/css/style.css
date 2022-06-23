@@ -16,33 +16,6 @@
     background: rgb(135, 134, 148);
 }
 
-/**** FONTS ****/
-
-@font-face {
-    font-family: Circular-Black;
-    src: url("/assets/fonts/circular/CircularStd-Black.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Circular-Bold;
-    src: url("/assets/fonts/circular/CircularStd-Bold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Inter;
-    src: url("/assets/fonts/circular/CircularStd-Book.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Circular-Light;
-    src: url("/assets/fonts/circular/CircularStd-Light.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Circular-Medium;
-    src: url("/assets/fonts/circular/CircularStd-Medium.otf") format("opentype");
-}
-
 body {
     font-family: 'Archivo Black', sans-serif;
     background-color: #000;
