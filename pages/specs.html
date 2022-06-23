@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!----- META TAGS ----->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----- LINKS ----->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/specs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="icon" href="../assets/img/logo.png" type="image/png" />
+    <title>Specs | iota.</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <!----- HEADER ----->
+        <header>
+            <div id="brand"><a href="/">iota.</a></div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="specs.html">Specs</a></li>
+                    <li id="buy"><a href="buy.html">Buy now</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="specs.html">Specs</a></li>
+                    <li id="buy"><a href="buy.html">Buy now</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!----- HERO ----->
+        <section class="hero">
+            <div class="hero-text">
+                <h1><span id="specs">Specifiations.</span></h1>
+                <p>Learn more about the iota laptop model's technical specifications and features.</p>
+            </div>
+        </section>
+    </div>
+
+    <!----- FEATURES ----->
+    <div class="features">
+        <div class="about-content">
+            <h1 style="margin-bottom: 30px;">More Features</h1>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-surface-laptop-4-touchscreen-1668x940-1?wid=380&hei=213&fit=crop"
+                        alt="rover" />
+                </div>
+                <div class="card-body">
+                    <h2>13.5” or 15” touchscreen</h2><br>
+                    <p>
+                        · Easy to slip in your bag, 13.5” is ideal for productivity and portability. <br><br>
+
+                        · Split the view in two. 15” is great for split-screen viewing of multiple apps side by side
+                        with Windows Snap.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-surface-laptop-4-comfort-convenience-1668x940-1?wid=380&hei=213&fit=crop"
+                        alt="rover" />
+                </div>
+                <div class="card-body">
+                    <h2>Comfort and convenience</h2><br>
+                    <p>
+                        · Breeze through projects and presentations with exceptional typing comfort and large trackpad.
+                        <br><br>
+
+                        · Pick up where you left off fast with Windows Hello face sign-in and Instant On.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-surface-laptop-4-multitasking-1668x940-1?wid=380&hei=213&fit=crop"
+                        alt="rover" />
+                </div>
+                <div class="card-body">
+                    <h2>Serious multitasking</h2><br>
+                    <p>
+                        · Power to do what you want, from creative apps to casual gaming. <br><br>
+
+                        · Great video calls, even in low light, with built-in HD camera backed by Studio Mics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----- LIVE SPECS ----->
+    <div class="specs">
+        <div class="about-content">
+            <h1>Live Specs</h1>
+            <p>View the features and specifications of the new iota laptop.</p>
+        </div>
+
+        <div class="live-specs">
+            <img src="../assets/img/laptop-main.png" draggable="false">
+            <div class="point" onclick="Popup()" style="top:66.5%; left:29%">
+                <span class="popup-text" id="popup">Invisible Hinge</span>
+            </div>
+            <div class="point" onclick="Popup2()" style="top:66.5%; left:49%">
+                <span class="popup-text" id="popup2">Thermal Cooling</span>
+            </div>
+            <div class="point" onclick="Popup3()" style="top:71.5%; left:71%">
+                <span class="popup-text" id="popup3">Removable SSD</span>
+            </div>
+            <div class="point" onclick="Popup4()" style="top:73.5%; left:26%">
+                <span class="popup-text" id="popup4">USB-C and USB-A ports</span>
+            </div>
+            <div class="point" onclick="Popup5()" style="top:48.5%; left:49%">
+                <span class="popup-text" id="popup5">PixelSense Touchscreen</span>
+            </div>
+            <div class="point" onclick="Popup6()" style="top:73.5%; left:46%">
+                <span class="popup-text" id="popup6">Keyboard & trackpad</span>
+            </div>
+            <div class="point" onclick="Popup7()" style="top:19.9%; left:47%">
+                <span class="popup-text" id="popup7">720p HD f2.0 camera</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!----- FOOTER ----->
+    <footer>
+        <center>
+            <p>&copy; iota. 2022 All rights reserved. Made by Sahil Jain</p>
+        </center>
+    </footer>
+
+    <!----- JS LINK ----->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
